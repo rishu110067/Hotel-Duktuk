@@ -229,13 +229,13 @@ tr:nth-child(1) {
 }
 
 .main-title{
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .sub-title{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     font-family: 'Courgette', cursive;
 }
@@ -372,18 +372,7 @@ tr:nth-child(1) {
 
 /* Media queries */
 
-@media screen and (min-width: 0px){
-
-    /* Hero section styles */
-    .main-title{
-        font-size: 6rem;
-    }
-    .sub-title{
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 750px){
     
     /* Header section styles */
     .header{
@@ -421,7 +410,7 @@ tr:nth-child(1) {
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 900px){
     section:not(.booking){ 
         padding: 10rem 0;
     }
