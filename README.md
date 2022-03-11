@@ -2,4 +2,7 @@
 
 Website for Hotel Duktuk in Turtuk, Ladakh.
 
-https://hotelduktuk.w3spaces.com/#facilities
+https://rishu110067.github.io/Hotel-Duktuk/
+
+https://hotel-duktuk.vercel.app
+
