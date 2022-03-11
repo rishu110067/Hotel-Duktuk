@@ -373,6 +373,14 @@ tr:nth-child(1) {
     font-size: 3.5rem;
 }
 
+#map{
+    width: 600px;
+    height: 450px;
+    border-color: var(--yellow-solid);
+    border-radius: 20px;
+    border-width: 3px;
+}
+
 
 /* Media queries */
 @media screen and (min-width: 0px){
@@ -387,6 +395,21 @@ tr:nth-child(1) {
     }
     .sub-title{
         font-size: 3rem;
+    }
+
+    /* Footer section styles */
+    #map{
+        width: 360px;
+        height: 270px;
+    }
+}
+
+@media screen and (min-width: 500px){
+
+    /* Footer section styles */
+    #map{
+        width: 480px;
+        height: 360px;
     }
 }
 
@@ -410,6 +433,12 @@ tr:nth-child(1) {
     }
     .sub-title{
         font-size: 3rem;
+    }
+
+    /* Footer section styles */
+    #map{
+        width: 600px;
+        height: 450px;
     }
 }
 
