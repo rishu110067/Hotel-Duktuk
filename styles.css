@@ -48,22 +48,6 @@ section{
     padding: 5rem 0;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-  
-td, th {
-    border: 2px solid #bebebe;
-    text-align: left;
-    padding: 8px;
-}
-  
-tr:nth-child(1) {
-    background-color: #dddddd;
-}
-
-
 /* Reusable styles */
 .btn{
     color: #fff;
@@ -348,6 +332,21 @@ tr:nth-child(1) {
     object-fit: cover;
 }
 
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 2px solid #bebebe;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(1) {
+    background-color: #dddddd;
+}
 
 /* Footer section styles */
 .footer{
@@ -395,6 +394,26 @@ tr:nth-child(1) {
     }
     .sub-title{
         font-size: 3rem;
+    }
+
+    /* Table styles */
+    td, th {
+        padding: 4px;
+    }
+
+    /* Footer section styles */
+    #map{
+        width: 280px;
+        height: 210px;
+    }
+}
+
+
+@media screen and (min-width: 380px){
+
+    /* Table styles */
+    td, th {
+        padding: 8px;
     }
 
     /* Footer section styles */
