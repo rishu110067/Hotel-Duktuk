@@ -20,6 +20,8 @@
     --purple-transparent-alt2: rgba(53, 10, 79, .2);
     --purple-light: #8f50fb;
     --yellow-solid: #fa9e2c;
+    --light-blue-background: #f2f6f9;
+    --light-pink-background:  rgb(248, 242, 248);
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
     --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
 }
@@ -66,6 +68,8 @@ section{
     max-width: 120rem;
     padding: 0 1.5rem;
     margin: 0 auto;
+    text-align: center;
+
 }
 
 .form-btn{
@@ -236,6 +240,10 @@ section{
     margin-bottom: 5rem;
 }
 
+.contact .section-head{
+    margin-bottom: 2rem;
+}
+
 .heading{
     display: block;
     font-size: 4rem;
@@ -246,7 +254,7 @@ section{
     font-size: 2rem;
     font-family: "Courgette", cursive;
     font-weight: 300;
-    color: #a5a5a5;
+    color: #8e8e8e;
 }
 
 .grid{
@@ -279,6 +287,7 @@ section{
     height: 100%;
     background-color: var(--purple-transparent-alt2);
     z-index: -1;
+    border-radius: 10%;
 }
 
 .hotel-image{
@@ -289,6 +298,7 @@ section{
     top: 0;
     left: 0;
     z-index: -2;
+    border-radius: 10%;
 }
 
 .hotel-name{
@@ -434,30 +444,48 @@ section{
     background-color: #444;
 }
 
+/* Send Message Styles */
+.message {
+    background-color: var(--light-pink-background);
+}
 
-
-/* Footer section styles */
-.footer{
-    padding: 7.5rem 0 2.5rem 0;
-    background-color: var(--purple-solid);
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+form input, form textarea{
+    padding: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    background-color: #ddd;
+    font-family: 'Courgette', cursive;
+    font-size: 1.8rem;
+}
+form button{
+    background-color: #333;
+    cursor: pointer;
     color: #fff;
+    height: 4rem;
     font-size: 2rem;
+    font-family: 'Courgette', cursive;
+    width: 30%;
+    margin: auto;
+    border-radius: 0.5rem;
 }
 
-.footer-content{
-    margin-bottom: 5rem;
-    text-align: center;
+/* Contact us Styles */
+
+.contact {
+    background-color: var(--light-blue-background);
 }
 
-.footer .paragraph{
+.contact .paragraph{
+    font-size: 1.7rem;
     color: inherit;
     margin-top: 2.5rem;
-}
-
-.footer-heading{
-    text-transform: uppercase;
-    margin-bottom: 3rem; 
-    font-size: 3.5rem;
 }
 
 #map{
@@ -466,11 +494,38 @@ section{
     border-color: var(--yellow-solid);
     border-radius: 20px;
     border-width: 3px;
+    margin: 2rem;
+}
+
+
+/* Footer section styles */
+.footer{
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: var(--purple-solid);
+    color: #fff;
+}
+
+.footer-content{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.footer .paragraph{
+    color: inherit;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    margin-bottom: 3rem; 
+    font-size: 3.5rem;
 }
 
 
 
-/* Responsive: Media queries */
+/* -------------------- Responsive: Media queries --------------------- */
+
 @media screen and (min-width: 0px){
 
     /* Hero section styles */

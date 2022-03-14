@@ -1,3 +1,5 @@
+/* ------------------ Navigation Menu Part ------------------ */
+
 // Opening menu when hamburger is clicked
 let header = document.querySelector('.header');
 let hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -95,3 +97,34 @@ function increment(cond) {
     cond ? index++ :index--;
     changeImg(index);
 }
+
+/* ------------------ Contact Form Part ------------------ */
+
+const contact_form = document.querySelector('.contact_form');
+const contact_name = document.querySelector('.name');
+const contact_email = document.querySelector('.email');
+const contact_phone = document.querySelector('.phone');
+const msg = document.querySelector('.msg');
+
+// Function to send message when Send button is clicked
+function sendMsg()
+{
+    // Function to send email
+    Email.send({
+        SecureToken : "e43167e4-945d-4c8e-bd0c-b84e33b6991e",
+        To : 'rishu110067@gmail.com',
+        From : 'rishu110067@gmail.com',
+        Subject : "Contact Form",
+        Body : "Name: " + contact_name.value + "<br>" + 
+                "Email: " + contact_email.value + "<br>" + 
+                "Phone: " + contact_phone.value + "<br>" + 
+                "<br>" + 
+                "Message: " + "<br>" + 
+                msg.value 
+    }).then(
+        message => alert("Message Sent Successfully!")
+    );
+}
+
+// Add the Event Listener submit
+contact_form.addEventListener('submit', sendMsg);

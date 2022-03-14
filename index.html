@@ -38,7 +38,7 @@
                     <a href="#gallery" class="nav-link" id="gal">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#tariff" class="nav-link" id="tar">Tariff</a>
+                    <a href="#message" class="nav-link" id="tar">Message</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link" id="con">Contact</a>
@@ -178,22 +178,36 @@
             </div>
         </div>
     </section>
-</main>
 
-<!-- Footer Section -->
-<footer class="footer" id="contact">
-    <div class="container">
-        <div class="footer-content">
-            <h4 class="footer-heading">Contact us</h4>
+    <section class="message" id="message">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Message us</span>
+                <div class="sub-heading">Type your details and message and we'll get in touch with you!</div>
+            </h5>
             
-            <a href="index.html" class="logo">
-                <img class="logo-image" src="./assets/logo.jpeg" alt="">
-            </a>
+            <form class="contact_form" action="#">
+                <input class="name" type="text" placeholder="Name" />
+                <input class="email" type="email" placeholder="Email" />
+                <input class="phone" type="tel" placeholder="Phone number" />
+                <textarea class="msg" rows="6" placeholder="Your message.. "></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Contact us</span>
+                <div class="sub-heading">Feel free to contact us anytime!</div>
+            </h5>
             
             <p class="paragraph">
                 <i class = "fa fa-mobile fa-1x" aria-hidden = "true"> </i>
                 <b>Phone/Whatsapp</b> 
-                <br>+91 9718690870, +91 9315898048
+                <br>+91 9718690870 
+                <br>+91 9315898048
                 <br>
                 <br>
                 <i class = "fa fa-envelope" aria-hidden = "true"> </i>
@@ -205,18 +219,27 @@
                 <b>Address</b> 
                 <br>Sub Division Nubra Valley, Turtuk Village, Ladakh 194401
             </p>
+            
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13097.95577485293!2d76.8338829!3d34.8439398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28198c1e20f90717!2sHotel%20Duktuk!5e0!3m2!1sen!2sin!4v1647029741853!5m2!1sen!2sin" loading="lazy"></iframe>
+        </div>
+    </section>
+</main>
 
-            <p class="paragraph">
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13097.95577485293!2d76.8338829!3d34.8439398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28198c1e20f90717!2sHotel%20Duktuk!5e0!3m2!1sen!2sin!4v1647029741853!5m2!1sen!2sin" loading="lazy"></iframe>
-            </p>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
 
             <p class="paragraph">
                 Thank You &hearts; Visit Again!
             </p>
+            <br>
+            &#169 2022 Hotel Duktuk
         </div>
     </div>
 </footer>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="main.js"></script>
 </body>
 
