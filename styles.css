@@ -408,7 +408,6 @@ tr:nth-child(1) {
     }
 }
 
-
 @media screen and (min-width: 380px){
 
     /* Table styles */
@@ -513,4 +512,106 @@ tr:nth-child(1) {
     .room-info-wrap{
         margin-left: 1.5rem;
     }
+}
+
+
+/* Image Slider */
+
+.wrapper{
+    --captionSize: 1vw;
+    --dotSize: 0.8vw;
+
+    margin: auto;
+    padding: 4rem 0rem 2.5rem 0rem;
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 0.7vw;
+    box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.3);
+}
+.image, .thumbnail{
+    padding: 1vw;
+}
+.title{
+    font-size: var(--titleSize);
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#img{
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    width: 550px;
+    background-image: url(./assets/room1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image;
+    border-radius: 0.25vw;
+}
+#img span{
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    font-size: var(--titleSize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vw;
+    width: 2.5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.7s ease, background-color 0.7s ease;
+}
+#img:hover span{
+    opacity: 1;
+}
+#img span:hover{
+    background-color: #000b; 
+}
+#prev{
+    left: 0;
+    border-radius: 0 0.3vw 0.3vw 0;
+}
+#next{
+    right: 0;
+    border-radius: 0.3vw 0 0 0.3vw;
+}
+#caption{
+    width: 100%;
+    padding: 0.3vw;
+    background-color: #000b;
+    font-size: var(--captionSize);
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+#img:hover #caption{
+    opacity: 1;
+    transform: translateY(-100%);
+}
+.thumbnail{
+    display: flex;
+    gap: 1vw;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.thumbnail span{
+    width: var(--dotSize);
+    height: var(--dotSize);
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #bbb;
+    transition: background-color 0.7s ease;
+}
+.thumbnail .active, .thumbnail span:hover{
+    background-color: #444;
 }
