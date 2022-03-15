@@ -60,7 +60,7 @@ function sendMsg()
     // Function to send email
     Email.send({
         SecureToken : "e43167e4-945d-4c8e-bd0c-b84e33b6991e",
-        To : 'rishu110067@gmail.com',
+        To : 'duktukinturtuk@gmail.com',
         From : 'rishu110067@gmail.com',
         Subject : "Contact Form",
         Body : "Name: " + contact_name.value + "<br>" + 
