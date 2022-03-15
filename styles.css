@@ -328,22 +328,22 @@ section{
 }
 
 .wrapper{
-    --captionSize: 1vw;
-    --dotSize: 0.8vw;
+    --captionSize: 1.5rem;
+    --dotSize: 0.8rem;
 
     margin: auto;
-    padding: 4rem 0rem 2.5rem 0rem;
-    width: 60%;
+    padding: 2rem 0rem 2rem 0rem;
+    width: 64rem;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     background-color: #f5f5f5;
-    border-radius: 0.7vw;
-    box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0 0 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 .image, .thumbnail{
-    padding: 1vw;
+    padding: 1rem;
 }
 .title{
     font-size: var(--titleSize);
@@ -354,13 +354,13 @@ section{
 #img{
     overflow: hidden;
     position: relative;
-    height: 400px;
-    width: 550px;
+    height: 42rem;
+    width: 58rem;
     background-image: url(./assets/gallery/gallery1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image;
-    border-radius: 0.25vw;
+    border-radius: 0.25rem;
 }
 #img span{
     color: #fff;
@@ -370,8 +370,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4vw;
-    width: 2.5vw;
+    height: 4rem;
+    width: 2.5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -386,15 +386,15 @@ section{
 }
 #prev{
     left: 0;
-    border-radius: 0 0.3vw 0.3vw 0;
+    border-radius: 0 0.3rem 0.3rem 0;
 }
 #next{
     right: 0;
-    border-radius: 0.3vw 0 0 0.3vw;
+    border-radius: 0.3rem 0 0 0.3rem;
 }
 #caption{
     width: 100%;
-    padding: 0.3vw;
+    padding: 0.3rem;
     background-color: #000b;
     font-size: var(--captionSize);
     text-align: center;
@@ -410,7 +410,7 @@ section{
 }
 .thumbnail{
     display: flex;
-    gap: 1vw;
+    gap: 1rem;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -549,9 +549,19 @@ form button{
         font-size: 3rem;
     }
 
-    /* Table styles */
-    td, th {
-        padding: 4px;
+    /* Image Slider styles */
+    .wrapper{
+        --captionSize: 1.5rem;
+        --dotSize: 0.8rem;
+        padding: 2rem 0rem 2rem 0rem;
+        width: 90vw;
+    }
+    .image, .thumbnail{
+        padding: 1rem;
+    }
+    #img{
+        height: 60vw;
+        width: 80vw;
     }
 
     /* Footer section styles */
@@ -604,6 +614,21 @@ form button{
     }
     .sub-title{
         font-size: 3rem;
+    }
+
+    /* Image Slider styles */
+    .wrapper{
+        --captionSize: 1.5rem;
+        --dotSize: 0.8rem;
+        padding: 2rem 0rem 2rem 0rem;
+        width: 64rem;
+    }
+    .image, .thumbnail{
+        padding: 1rem;
+    }
+    #img{
+        height: 42rem;
+        width: 58rem;
     }
 
     /* Footer section styles */
