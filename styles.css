@@ -20,8 +20,10 @@
     --purple-transparent-alt2: rgba(53, 10, 79, .2);
     --purple-light: #8f50fb;
     --yellow-solid: #fa9e2c;
-    --light-blue-background: #f2f6f9;
-    --light-pink-background:  rgb(248, 242, 248);
+    --light-blue-background: #f2f6f9;;
+    --light-purple-background:  #f6f2f9;
+    --light-orange-background: #f9f6f2; 
+    --light-grey-background: #f6f9f2; 
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
     --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
 }
@@ -317,33 +319,12 @@ section{
     color: var(--yellow-solid);
 }
 
-/* ------------------------------ Rooms (Facilities) section styles ------------------------------ */
-.rooms{
-    background-color: #f2f6f9;
+
+/* ------------------------------ Gallery / Image Slider styles ------------------------------ */
+
+.gallery{
+    background-color: var(--light-orange-background);
 }
-
-.image-wrap{
-    position: relative;
-    height: 25rem;
-}
-
-.image-wrap::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.room-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* ------------------------------ Image Slider styles ------------------------------ */
 
 .wrapper{
     --captionSize: 1vw;
@@ -444,9 +425,35 @@ section{
     background-color: #444;
 }
 
+/* ------------------------------ Rooms (Facilities) section styles ------------------------------ */
+.rooms{
+    background-color: var(--light-blue-background);
+}
+
+.image-wrap{
+    position: relative;
+    height: 25rem;
+}
+
+.image-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.room-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 /* ------------------------------ Send Message Styles ------------------------------ */
 .message {
-    background-color: var(--light-pink-background);
+    background-color: var(--light-grey-background);
 }
 
 form{
@@ -479,7 +486,7 @@ form button{
 /* ------------------------------ Contact Us Styles ------------------------------ */
 
 .contact {
-    background-color: var(--light-blue-background);
+    background-color: white;
 }
 
 .contact .paragraph{
