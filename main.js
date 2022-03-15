@@ -78,7 +78,7 @@ function sendMsg()
 contact_form.addEventListener('submit', sendMsg);
 
 
-/* ------------------------------ Image Slider Part ------------------------------ */
+/* ------------------------------ Gallery Image Slider Part ------------------------------ */
 
 const img = document.getElementById("img");
 const caption = document.getElementById("caption");
@@ -87,20 +87,44 @@ const thumbnail = document.querySelector(".thumbnail");
 // Store the url and caption for each Image
 let imgList = [
     {
-        url: "url(./assets/room1.jpg)",
+        url: "url(./assets/gallery/gallery1.jpg)",
         cap: "Image 1"
     },
     {
-        url: "url(./assets/room2.jpg)",
+        url: "url(./assets/gallery/gallery2.jpg)",
         cap: "Image 2"
     },
     {
-        url: "url(./assets/room3.jpg)",
+        url: "url(./assets/gallery/gallery3.jpg)",
         cap: "Image 3"
     },
     {
-        url: "url(./assets/room4.jpg)",
+        url: "url(./assets/gallery/gallery4.jpg)",
         cap: "Image 4"
+    },
+    {
+        url: "url(./assets/gallery/gallery5.jpg)",
+        cap: "Image 5"
+    },
+    {
+        url: "url(./assets/gallery/gallery6.jpg)",
+        cap: "Image 6"
+    },
+    {
+        url: "url(./assets/gallery/gallery7.jpg)",
+        cap: "Image 7"
+    },
+    {
+        url: "url(./assets/gallery/gallery8.jpg)",
+        cap: "Image 8"
+    },
+    {
+        url: "url(./assets/gallery/gallery9.jpg)",
+        cap: "Image 9"
+    },
+    {
+        url: "url(./assets/gallery/gallery10.jpg)",
+        cap: "Image 10"
     }
 ];
 
