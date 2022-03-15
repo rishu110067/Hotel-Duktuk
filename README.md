@@ -2,7 +2,9 @@
 
 A Responsive Website for Hotel Duktuk in Turtuk, Ladakh.
 
-Main Website: http://www.hotelturtuk.com/
+Main Website: 
+
+http://www.hotelturtuk.com/
 
 For Testing:
 
