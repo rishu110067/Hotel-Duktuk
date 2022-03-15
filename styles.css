@@ -127,7 +127,8 @@ section{
 }
 
 .logo img{
-    max-width: 80%;
+    height: 60px;
+    width: 120px;
 }
 
 .hamburger-menu{
