@@ -564,35 +564,13 @@ form button{
         width: 80vw;
     }
 
-    /* Footer section styles */
+    /* Contact us styles */
     #map{
-        width: 280px;
-        height: 210px;
+        width: 80vw;
+        height: 50vw;
     }
 }
 
-@media screen and (min-width: 380px){
-
-    /* Table styles */
-    td, th {
-        padding: 8px;
-    }
-
-    /* Footer section styles */
-    #map{
-        width: 360px;
-        height: 270px;
-    }
-}
-
-@media screen and (min-width: 500px){
-
-    /* Footer section styles */
-    #map{
-        width: 480px;
-        height: 360px;
-    }
-}
 
 @media screen and (min-width: 700px){
     
@@ -629,12 +607,6 @@ form button{
     #img{
         height: 42rem;
         width: 58rem;
-    }
-
-    /* Footer section styles */
-    #map{
-        width: 600px;
-        height: 450px;
     }
 }
 
@@ -691,4 +663,9 @@ form button{
         margin-left: 1.5rem;
     }
 
+    /* Contact us styles */
+    #map{
+        width: 80rem;
+        height: 45rem;
+    }
 }
